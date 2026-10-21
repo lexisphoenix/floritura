@@ -1,0 +1,12 @@
+{
+  "name": "floritura",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Panel de After Effects para ver las florituras de una letra y colocar la elegida como trazado editable.",
+  "scripts": {
+    "test": "node scripts/test-font.js"
+  },
+  "dependencies": {
+    "opentype.js": "1.3.4"
+  }
+}

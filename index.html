@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Floritura</title>
+  <link rel="stylesheet" href="css/panel.css">
+</head>
+<body>
+  <header>
+    <h1 class="mark">Floritura</h1>
+    <p class="sub">Variantes de la letra seleccionada. La palabra entra en su propia composición: el glifo como trazado y el resto como texto.</p>
+    <div class="row">
+      <button type="button" id="read" class="ghost">Leer capa</button>
+      <button type="button" id="pick" class="ghost">Elegir fuente…</button>
+    </div>
+    <p class="meta" id="meta">Ninguna capa leída.</p>
+    <select id="matches" hidden></select>
+  </header>
+  <p class="status" id="status"></p>
+  <section>
+    <h2>Letra</h2>
+    <div class="chars" id="chars"></div>
+  </section>
+  <section>
+    <h2>Variantes</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+  <section>
+    <h2>En la palabra</h2>
+    <div class="preview-wrap"><canvas id="preview" width="580" height="184"></canvas></div>
+    <div class="controls">
+      <label for="font-size">Cuerpo</label>
+      <input id="font-size" type="number" min="1" max="2000" step="1" value="100">
+    </div>
+  </section>
+  <footer>
+    <div class="row">
+      <button type="button" id="place" class="primary" disabled>Colocar en la composición</button>
+    </div>
+    <div class="row">
+      <button type="button" id="restore" class="ghost" hidden>Volver a texto</button>
+    </div>
+  </footer>
+  <script src="js/vendor/opentype.min.js"></script>
+  <script src="js/font-features.js"></script>
+  <script src="js/panel.js"></script>
+</body>
+</html>
